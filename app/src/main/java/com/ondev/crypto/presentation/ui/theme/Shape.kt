@@ -1,4 +1,4 @@
-package com.ondev.crypto.ui.theme
+package com.ondev.crypto.presentation.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes

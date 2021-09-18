@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
 }
 
 android {
@@ -38,7 +40,6 @@ android {
     }
     composeOptions {
         kotlinCompilerExtensionVersion compose_version
-        kotlinCompilerVersion '1.5.21'
     }
     packagingOptions {
         resources {
@@ -58,8 +59,20 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.1'
     implementation 'androidx.activity:activity-compose:1.3.1'
 
+    //GSON
+    implementation 'com.google.code.gson:gson:2.8.8'
+
+    //Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.7.2'
+
     //Material Icons for compose
     implementation "androidx.compose.material:material-icons-extended:$compose_version"
+
+    // Hilt (Dependency Injection) add id 'dagger.hilt.android.plugin' and  id 'kotlin-kapt'
+    //ADD IN PROJECT GRADLE classpath "com.google.dagger:hilt-android-gradle-plugin:2.35.1"
+    implementation 'com.google.dagger:hilt-android:2.38.1'
+    implementation 'androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03'
+    kapt 'com.google.dagger:hilt-android-compiler:2.38.1'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

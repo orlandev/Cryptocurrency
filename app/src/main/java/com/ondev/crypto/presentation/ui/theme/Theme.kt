@@ -1,4 +1,4 @@
-package com.ondev.crypto.ui.theme
+package com.ondev.crypto.presentation.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme

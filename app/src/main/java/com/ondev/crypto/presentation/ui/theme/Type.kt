@@ -1,4 +1,4 @@
-package com.ondev.crypto.ui.theme
+package com.ondev.crypto.presentation.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
