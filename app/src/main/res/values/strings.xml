@@ -1,5 +1,10 @@
 <resources>
-    <string name="app_name">Criptomonedas</string>
-    <string name="active">activo</string>
-    <string name="inactive">inactivo</string>
+    <string name="app_name">Cryptocurrency</string>
+    <string name="active">active</string>
+    <string name="inactive">inactive</string>
+    <string name="http_error_message">A server connection error has occurred.</string>
+    <string name="io_error_message">A connection error has occurred, Please check your internet connection.</string>
+    <string name="unknow_error_message">An unknown error has occurred</string>
+    <string name="tags">Tags</string>
+    <string name="team_members">Team members</string>
 </resources>
